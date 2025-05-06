@@ -1,0 +1,201 @@
+<div class="detail-container" *ngIf="product">
+  <div class="notification-container" *ngIf="notification">
+    <div class="notification" [ngClass]="notification.type">
+      {{ notification.message }}
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <h2>Update Product: {{ product.title }}</h2>
+    </div>
+    
+    <div class="card-body">
+      <div class="product-preview">
+        <img [src]="productImage" alt="{{ product.title }}">
+      </div>
+      
+      <form [formGroup]="productForm" (ngSubmit)="onSubmit()">
+        <div class="form-grid">
+          <!-- Title -->
+          <div class="form-group">
+            <label for="title">Product Title</label>
+            <input 
+              id="title"
+              type="text"
+              formControlName="title" 
+              placeholder="Enter product title"
+              [ngClass]="{'has-error': productForm.get('title')?.invalid && productForm.get('title')?.touched}"
+            >
+            <div class="error-message" *ngIf="productForm.get('title')?.invalid && productForm.get('title')?.touched">
+              Title is required
+            </div>
+          </div>
+          
+          <!-- Image URL -->
+          <div class="form-group">
+            <label for="image">Main Image Name</label>
+            <input 
+              id="image"
+              type="text"
+              formControlName="image" 
+              placeholder="Enter image name"
+              [ngClass]="{'has-error': productForm.get('image')?.invalid && productForm.get('image')?.touched}"
+            >
+            <div class="error-message" *ngIf="productForm.get('image')?.invalid && productForm.get('image')?.touched">
+              Image name is required
+            </div>
+          </div>
+          
+          <!-- Old Price -->
+          <div class="form-group">
+            <label for="oldPrice">Old Price</label>
+            <input 
+              id="oldPrice"
+              type="number"
+              formControlName="oldPrice" 
+              min="0" 
+              step="0.01"
+              [ngClass]="{'has-error': productForm.get('oldPrice')?.invalid && productForm.get('oldPrice')?.touched}"
+            >
+            <div class="error-message" *ngIf="productForm.get('oldPrice')?.invalid && productForm.get('oldPrice')?.touched">
+              Old price must be a positive number
+            </div>
+          </div>
+          
+          <!-- Current Price -->
+          <div class="form-group">
+            <label for="currentPrice">Current Price</label>
+            <input 
+              id="currentPrice"
+              type="number"
+              formControlName="currentPrice" 
+              min="0" 
+              step="0.01"
+              [ngClass]="{'has-error': productForm.get('currentPrice')?.invalid && productForm.get('currentPrice')?.touched}"
+            >
+            <div class="error-message" *ngIf="productForm.get('currentPrice')?.invalid && productForm.get('currentPrice')?.touched">
+              Current price must be a positive number
+            </div>
+          </div>
+          
+          <!-- Discount -->
+          <div class="form-group">
+            <label for="discount">Discount (%)</label>
+            <input 
+              id="discount"
+              type="number"
+              formControlName="discount" 
+              min="0" 
+              max="100"
+              [ngClass]="{'has-error': productForm.get('discount')?.invalid && productForm.get('discount')?.touched}"
+            >
+            <div class="error-message" *ngIf="productForm.get('discount')?.invalid && productForm.get('discount')?.touched">
+              Discount must be between 0 and 100
+            </div>
+          </div>
+          
+          <!-- Condition -->
+          <div class="form-group">
+            <label for="rating">Condition (1-5)</label>
+            <div class="rating-input">
+              <input 
+                id="rating"
+                type="range" 
+                min="1" 
+                max="5" 
+                step="1" 
+                formControlName="rating"
+              >
+              <span class="rating-value">{{ productForm.get('rating')?.value }}</span>
+            </div>
+          </div>
+          
+          <!-- Mark sealed -->
+          <div class="form-group checkbox-group">
+            <label class="checkbox-container">
+              <input type="checkbox" formControlName="isSealed">
+              <span class="checkmark"></span>
+              Mark as sealed
+            </label>
+          </div>
+
+          <!-- Console -->
+          <div class="form-group">
+            <label for="console">Console</label>
+            <input 
+              id="console"
+              type="text"
+              formControlName="console" 
+              placeholder="Enter console name"
+              [ngClass]="{'has-error': productForm.get('console')?.invalid && productForm.get('console')?.touched}"
+            >
+            <div class="error-message" *ngIf="productForm.get('console')?.invalid && productForm.get('console')?.touched">
+              Console name is required
+            </div>
+          </div>
+        </div>
+        
+        <!-- Description Field -->
+        <div class="form-group full-width">
+          <label for="description">Product Description</label>
+          <textarea
+            id="description"
+            formControlName="description"
+            rows="4"
+            placeholder="Enter product description"
+            [ngClass]="{'has-error': productForm.get('description')?.invalid && productForm.get('description')?.touched}"
+          ></textarea>
+          <div class="error-message" *ngIf="productForm.get('description')?.invalid && productForm.get('description')?.touched">
+            Description is required
+          </div>
+        </div>
+
+        <!-- Additional Images -->
+        <div class="form-section">
+          <h3>Additional Images</h3>
+          <div formArrayName="images">
+            <div class="additional-image-item" *ngFor="let imageForm of images.controls; let i = index" [formGroupName]="i">
+              <div class="form-group">
+                <label [for]="'image-src-' + i">Image Name</label>
+                <input
+                  [id]="'image-src-' + i"
+                  type="text"
+                  formControlName="src"
+                  placeholder="Enter image name"
+                  [ngClass]="{'has-error': imageForm.get('src')?.invalid && imageForm.get('src')?.touched}"
+                >
+                <div class="error-message" *ngIf="imageForm.get('src')?.invalid && imageForm.get('src')?.touched">
+                  Image name is required
+                </div>
+              </div>
+              
+              <div class="form-group">
+                <label [for]="'image-alt-' + i">Image Alt Text</label>
+                <input
+                  [id]="'image-alt-' + i"
+                  type="text"
+                  formControlName="alt"
+                  placeholder="Enter alt text"
+                  [ngClass]="{'has-error': imageForm.get('alt')?.invalid && imageForm.get('alt')?.touched}"
+                >
+                <div class="error-message" *ngIf="imageForm.get('alt')?.invalid && imageForm.get('alt')?.touched">
+                  Alt text is required
+                </div>
+              </div>
+
+              <button type="button" class="btn btn-danger btn-sm" (click)="removeImage(i)">Remove</button>
+            </div>
+            
+            <button type="button" class="btn btn-secondary btn-sm" (click)="addImage()">Add Image</button>
+          </div>
+        </div>
+        
+        <div class="button-row">
+          <button type="button" class="btn btn-secondary" (click)="cancel()">Cancel</button>
+          <button type="submit" class="btn btn-primary">Update Product</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

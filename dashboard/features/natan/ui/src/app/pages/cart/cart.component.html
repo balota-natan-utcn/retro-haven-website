@@ -1,0 +1,31 @@
+<div class="cart-container">
+  <h2>Shopping Cart</h2>
+
+  <div *ngIf="(cartItems$ | async)?.length === 0; else cartContent" class="empty-cart">
+    <p>Your cart is empty.</p>
+    <a routerLink="/" class="btn btn-primary">Continue Shopping</a>
+  </div>
+
+  <ng-template #cartContent>
+    <div class="cart-items">
+      <div *ngFor="let item of (cartItems$ | async)" class="cart-item">
+        <img [ngSrc]="item.product.image" [alt]="item.product.title" width="80" height="80" class="cart-item-image">
+        <div class="item-details">
+          <h3>{{ item.product.title }}</h3>
+          <p>Price: {{ item.product.currentPrice | currency }}</p>
+          <p>Quantity: {{ item.quantity }}</p>
+        </div>
+        <div class="item-total">
+          <p>Subtotal: {{ (item.product.currentPrice * item.quantity) | currency }}</p>
+          <button (click)="removeFromCart(''+item.product.id)" class="btn btn-danger btn-sm">Remove</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="cart-summary">
+      <h3>Total: {{ (totalPrice$ | async) | currency }}</h3>
+      <button (click)="clearCart()" class="btn btn-warning">Clear Cart</button>
+      <button class="btn btn-success checkout-btn">Proceed to Checkout</button>
+    </div>
+  </ng-template>
+</div>

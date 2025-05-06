@@ -1,0 +1,36 @@
+<div class="product-card">
+  <div class="product-image-container">
+    <img fetchpriority="high" [ngSrc]="product.image" width="71" height="100" [routerLink]="['/product', product.id]" [alt]="product.title" class="product-image">
+    
+    <div *ngIf="product.discount > 0" class="discount-ribbon">
+      -{{ product.discount | currency }}
+    </div>
+    
+    <button 
+      *ngIf="product.isSealed"
+      class="sealed-indicator">
+      <img src="seal-icon.svg" class="seal-icon" alt="Seal indicator">
+    </button>
+  </div>
+  
+  <div class="product-details">
+    <h2 class="product-title" [routerLink]="['/product', product.id]">{{ product.title }}</h2>
+    
+    <div class="rating">
+      <div class="stars">
+        <span *ngFor="let star of [1, 2, 3, 4, 5]" class="star" [class.filled]="star <= product.rating">
+          ★
+        </span>
+      </div>
+    </div>
+    
+    <div class="price-container">
+      <span class="old-price">{{ product.oldPrice | currency }}</span>
+      <span class="current-price">{{ product.currentPrice | currency }}</span>
+    </div>
+    
+    <button class="add-to-cart-button" (click)="addToCart()">
+      Add to Cart
+    </button>
+  </div>
+</div>

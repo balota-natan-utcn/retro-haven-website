@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" xmlns:bx="https://boxy-svg.com">
+  <ellipse style="stroke: rgb(0, 0, 0); fill: rgb(111, 27, 27);" cx="249.526" cy="248.576" rx="242.528" ry="242.528"/>
+  <ellipse style="stroke: rgb(0, 0, 0); fill: rgb(255, 255, 255);" cx="249.525" cy="249.526" rx="230.449" ry="230.449"/>
+  <text style="fill: rgb(111, 27, 27); font-family: &quot;Abril Fatface&quot;; font-size: 113px; white-space: pre;" x="30.361" y="290.013">SEALED</text>
+  <defs>
+    <style bx:fonts="Abril Fatface">@import url(https://fonts.googleapis.com/css2?family=Abril+Fatface%3Aital%2Cwght%400%2C400&amp;display=swap);</style>
+  </defs>
+</svg>

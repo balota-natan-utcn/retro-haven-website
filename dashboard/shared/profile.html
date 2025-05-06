@@ -1,0 +1,14 @@
+<div class="card">
+    <img id="userImage" class="user-image" v-bind:src="user.profileImage">
+    <div class="username" id="name">{{user.username}}</div>
+
+    <div class="attendance">
+        <div v-for="(entry, index) in attendance">
+            <div :class="['day', { active: entry }]"></div>
+            <!--<div
+                style="width: 16px; height: 16px; background: gold; clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);">
+            </div>-->
+        </div>
+
+    </div>
+</div>

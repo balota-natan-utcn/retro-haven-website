@@ -1,0 +1,127 @@
+.product-container {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.product-images {
+  flex: 1;
+}
+
+.main-image {
+  margin-bottom: 1rem;
+  width: 400px; /* Set your desired container width */
+  height: 400px; /* Set your desired container height */
+  
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* 'contain' preserves aspect ratio */
+    border-radius: 8px;
+  }
+}
+
+.image-thumbnails {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  
+  .thumbnail {
+    width: 80px;
+    height: 80px;
+    border: 2px solid transparent;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    
+    &:hover {
+      border-color: #ddd;
+    }
+    
+    &.active {
+      border-color: #3366ff;
+    }
+    
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 4px;
+    }
+  }
+}
+
+.product-info {
+  flex: 1;
+}
+
+.product-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.price-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.old-price {
+  text-decoration: line-through;
+  color: #888;
+  font-size: 1.1rem;
+}
+
+.new-price {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #d32f2f;
+}
+
+.add-to-cart-btn {
+  padding: 0.75rem 1.5rem;
+  background-color: #3366ff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  
+  &:hover {
+    background-color: #2952cc;
+  }
+}
+
+.product-description
+{
+  margin-top: 2rem;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+  white-space: pre-line;
+  
+  /* Add a bit of spacing between paragraphs if description has multiple paragraphs */
+p
+{
+  margin-bottom: 1rem;
+}
+  
+  /* If you have any lists in your description */
+ul, ol
+{
+  margin-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+  
+  /* If you have any headings in your description */
+h2, h3, h4
+{
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+}

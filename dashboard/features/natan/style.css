@@ -1,0 +1,23 @@
+.natan-container
+{
+    padding: 12px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+.natan-circle
+{
+    margin: 12px;
+    background-color: #00ff80;
+}
+
+.green
+{
+    background-color: green;
+}
+
+.red
+{
+    background-color: crimson;
+}

@@ -1,0 +1,350 @@
+[
+  {
+    "id": 1,
+    "title": "Contra Force",
+    "image": "nes_contra.webp",
+    "rating": 4,
+    "oldPrice": 199.99,
+    "currentPrice": 149.99,
+    "discount": 50,
+    "isSealed": true,
+    "console": "NES",
+    "description": "Contra Force is a run and gun game released by Konami for the Nintendo Entertainment System in 1992 in North America. It is a spinoff of the Contra series, being the third game in the series released for the NES following the original Contra and Super C. However, the game's plot and setting are unrelated to both previous and succeeding entries, as the villains in the game are human terrorists instead of an alien menace.",
+    "images": [
+      {
+        "imageId": 1,
+        "src": "nes_contra.webp",
+        "alt": "Contra Force main cover"
+      },
+      {
+        "imageId": 2,
+        "src": "nes_contra_front.webp",
+        "alt": "Contra Force front cover"
+      },
+      {
+        "imageId": 3,
+        "src": "nes_contra_back.webp",
+        "alt": "Contra Force back cover"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Mario Kart 64",
+    "image": "n64_mkart64.webp",
+    "rating": 5,
+    "oldPrice": 199.99,
+    "currentPrice": 149.99,
+    "discount": 50,
+    "isSealed": false,
+    "console": "Nintendo 64",
+    "images": [
+      {
+        "imageId": 1,
+        "src": "n64_mkart64.webp",
+        "alt": "Mario Kart 64 main cover"
+      },
+      {
+        "imageId": 2,
+        "src": "n64_mkart64_front.webp",
+        "alt": "Mario Kart 64 front cover"
+      },
+      {
+        "imageId": 3,
+        "src": "n64_mkart64_back.webp",
+        "alt": "Mario Kart 64 back cover"
+      }
+    ],
+    "description": "Mario Kart 64 is a kart racing video game featuring characters and elements from the Mario franchise, largely similar in gameplay to its predecessor, Super Mario Kart (1992).\nThe player controls one of eight Mario franchise characters and races opponents in karts around tracks based on locales from the Super Mario platform games.\nThe game's 20 courses are populated with obstacles to slow the player down, shortcuts letting the player skip sections, and boxes labeled with question marks which give the player a random item based on elements from the Super Mario series."
+  },
+  {
+    "id": 3,
+    "title": "Bomberman 64",
+    "image": "n64_bomberman64.webp",
+    "rating": 4,
+    "oldPrice": 199.99,
+    "currentPrice": 149.99,
+    "discount": 50,
+    "isSealed": true,
+    "console": "Nintendo 64",
+    "images": [
+      {
+        "imageId": 1,
+        "src": "n64_bomberman64.webp",
+        "alt": "Bomberman main cover"
+      },
+      {
+        "imageId": 2,
+        "src": "n64_bomberman64_front.webp",
+        "alt": "Bomberman front cover"
+      },
+      {
+        "imageId": 3,
+        "src": "n64_bomberman64_back.webp",
+        "alt": "Bomberman back cover"
+      }
+    ],
+    "description": "Bomberman 64 is a video game developed and published by Hudson Soft for the Nintendo 64. It was released in Japan on September 26, 1997, and in North America and Europe in November and December 1997, respectively. This game marks the first 3D entry in the Bomberman series and introduces a new single-player mode that incorporates action-adventure and platforming stages instead of the traditional arena-based gameplay."
+  },
+  {
+    "id": 4,
+    "title": "Mario Party 3",
+    "image": "n64_marioparty3.webp",
+    "rating": 3,
+    "oldPrice": 199.99,
+    "currentPrice": 149.99,
+    "discount": 50,
+    "isSealed": true,
+    "console": "Nintendo 64",
+    "images": [
+      {
+        "imageId": 1,
+        "src": "n64_marioparty3.webp",
+        "alt": "Mario Party 3 main cover"
+      },
+      {
+        "imageId": 2,
+        "src": "n64_marioparty3_front.webp",
+        "alt": "Mario Party 3 front cover"
+      },
+      {
+        "imageId": 3,
+        "src": "n64_marioparty3_back.webp",
+        "alt": "Mario Party 3 back cover"
+      }
+    ],
+    "description": "Mario Party 3 is a party video game developed by Hudson Soft and published by Nintendo for the Nintendo 64. It was first released in Japan on December 7, 2000, and in other regions in 2001. The game features eight playable characters: Mario, Luigi, Princess Peach, Yoshi, Wario, Donkey Kong, Princess Daisy, and Waluigi. The gameplay revolves around a traditional board game with five themed game board maps, where players compete to collect the most Stars within the allotted turns by playing mini-games and navigating the board."
+  },
+  {
+    "id": 5,
+    "title": "Paper Mario",
+    "image": "n64_papermario.webp",
+    "rating": 4,
+    "oldPrice": 199.99,
+    "currentPrice": 149.99,
+    "discount": 50,
+    "isSealed": true,
+    "console": "Nintendo 64",
+    "images": [
+      {
+        "imageId": 1,
+        "src": "n64_papermario.webp",
+        "alt": "Paper Mario main cover"
+      },
+      {
+        "imageId": 2,
+        "src": "n64_papermario_front.webp",
+        "alt": "Paper Mario front cover"
+      },
+      {
+        "imageId": 3,
+        "src": "n64_papermario_back.webp",
+        "alt": "Paper Mario back cover"
+      }
+    ],
+    "description": "Paper Mario is a 2000 role-playing game developed by Intelligent Systems and published by Nintendo for the Nintendo 64. It features a paper cutout version of Mario and combines elements from the role-playing and action-adventure genres. The game's title refers to its arts and crafts aesthetic, where nearly every character and many elements of the environments are drawn as flat 2D sprites, revealing themselves as paper-thin when turning around."
+  },
+  {
+    "id": 6,
+    "title": "Mega Man 2",
+    "image": "nes_megaman.webp",
+    "rating": 4,
+    "oldPrice": 199.99,
+    "currentPrice": 149.99,
+    "discount": 50,
+    "isSealed": true,
+    "console": "NES",
+    "images": [
+      {
+        "imageId": 1,
+        "src": "nes_megaman.webp",
+        "alt": "Mega Man main cover"
+      },
+      {
+        "imageId": 2,
+        "src": "nes_megaman_front.webp",
+        "alt": "Mega Man front cover"
+      },
+      {
+        "imageId": 3,
+        "src": "nes_megaman_back.webp",
+        "alt": "Mega Man back cover"
+      }
+    ],
+    "description": "Mega Man 2, also known as Rockman 2: The Mystery of Dr. Wily in Japan, is a 1988 action-platform game developed and published by Capcom for the Nintendo Entertainment System. It was released in Japan in 1988 and in North America and PAL regions the following year. The game continues Mega Man's battle against the evil Dr. Wily and his new set of Robot Masters, which include Metal Man, Air Man, Bubble Man, Quick Man, Crash Man, Flash Man, Heat Man, and Wood Man. Each Robot Master has a unique weapon and a stage related to their weapon's power, and defeating them allows the player to use their weapons. The game introduces several gameplay changes from the original, such as the Energy Tank, which allows players to refill Mega Man's health at any time, and a password system that saves the player's progress."
+  },
+  {
+    "id": 7,
+    "title": "Super Mario Bros 3",
+    "image": "nes_smb3.webp",
+    "rating": 4,
+    "oldPrice": 199.99,
+    "currentPrice": 149.99,
+    "discount": 50,
+    "isSealed": true,
+    "console": "NES",
+    "images": [
+      {
+        "imageId": 1,
+        "src": "nes_smb3.webp",
+        "alt": "Super Mario Bros 3 main cover"
+      },
+      {
+        "imageId": 2,
+        "src": "nes_smb3_front.webp",
+        "alt": "Super Mario Bros 3 front cover"
+      },
+      {
+        "imageId": 3,
+        "src": "nes_smb3_back.webp",
+        "alt": "Super Mario Bros 3 back cover"
+      }
+    ],
+    "description": "Super Mario Bros. 3 is a 2D action-adventure platform game for the Nintendo Entertainment System (NES) and Family Computer (Famicom). It is the fourth installment in the Super Mario series and is recognized as the third in Japan. The game was released in Japan on October 23, 1988, in North America on February 12, 1990, and in Europe and Australia on August 29, 1991."
+  },
+  {
+    "id": 8,
+    "title": "Kirby 64: The Crystal Shards",
+    "image": "n64_kirby64.webp",
+    "rating": 4,
+    "oldPrice": 199.99,
+    "currentPrice": 149.99,
+    "discount": 50,
+    "isSealed": true,
+    "console": "Nintendo 64",
+    "images": [
+      {
+        "imageId": 1,
+        "src": "n64_kirby64.webp",
+        "alt": "Kirby 64 main cover"
+      },
+      {
+        "imageId": 2,
+        "src": "n64_kirby64_front.webp",
+        "alt": "Kirby 64 front cover"
+      },
+      {
+        "imageId": 3,
+        "src": "n64_kirby64_back.webp",
+        "alt": "Kirby 64 back cover"
+      }
+    ],
+    "description": "Kirby 64: The Crystal Shards is a platformer game developed by HAL Laboratory and published by Nintendo for the Nintendo 64. It was first released in Japan on March 24, 2000, in North America on June 26, 2000, and in Europe on June 22, 2001. The game features Kirby's signature abilities such as floating, inhaling, Star Spit, Slide, and Air Gun, though some adjustments have been made to their mechanics. Unlike previous games, Kirby is limited to a grounded jump and a limited period of midair jumps. Kirby 64 is the first game in the series to use 3D graphics, although the gameplay remains two-dimensional."
+  },
+  {
+    "id": 9,
+    "title": "Crash Bandicoot",
+    "image": "ps1_crash.webp",
+    "rating": 4,
+    "oldPrice": 199.99,
+    "currentPrice": 149.99,
+    "discount": 50,
+    "isSealed": true,
+    "console": "Playstation 1",
+    "images": [
+      {
+        "imageId": 1,
+        "src": "ps1_crash.webp",
+        "alt": "Crash main cover"
+      },
+      {
+        "imageId": 2,
+        "src": "ps1_crash_front.webp",
+        "alt": "Crash front cover"
+      },
+      {
+        "imageId": 3,
+        "src": "ps1_crash_back.webp",
+        "alt": "Crash back cover"
+      }
+    ],
+    "description": "Crash Bandicoot is the titular main protagonist of the Crash Bandicoot franchise. He is an anthropomorphic eastern barred bandicoot who was genetically enhanced by the series' main antagonist, Doctor Neo Cortex. Introduced in the 1996 video game Crash Bandicoot, Crash was originally designed to be a mascot character for Sony to compete against Nintendo's Mario and Sega's Sonic the Hedgehog."
+  },
+  {
+    "id": 10,
+    "title": "Final Fantasy 7",
+    "image": "ps1_ff7.webp",
+    "rating": 4,
+    "oldPrice": 199.99,
+    "currentPrice": 149.99,
+    "discount": 50,
+    "isSealed": true,
+    "console": "Playstation 1",
+    "images": [
+      {
+        "imageId": 1,
+        "src": "ps1_ff7.webp",
+        "alt": "FF7 main cover"
+      },
+      {
+        "imageId": 2,
+        "src": "ps1_ff7_front.webp",
+        "alt": "FF7 front cover"
+      },
+      {
+        "imageId": 3,
+        "src": "ps1_ff7_back.webp",
+        "alt": "FF7 back cover"
+      }
+    ],
+    "description": "Final Fantasy VII is a 1997 role-playing video game developed by Square for the PlayStation. The seventh main installment in the Final Fantasy series, it was released in Japan by Square and internationally by Sony Computer Entertainment, becoming the first game in the main series to have a PAL release. The game's story follows Cloud Strife, a mercenary who joins an eco-terrorist organization to stop a world-controlling megacorporation from using the planet's life essence as an energy source. Ensuing events send Cloud and his allies in pursuit of Sephiroth, a superhuman who seeks to wound the planet and harness its healing power in order to be reborn as a god. Throughout their journey, Cloud bonds with his party members, including Aerith Gainsborough, who holds the secret to saving their world."
+  },
+  {
+    "id": 11,
+    "title": "Metal Gear: Solid",
+    "image": "ps1_mgear.webp",
+    "rating": 4,
+    "oldPrice": 199.99,
+    "currentPrice": 149.99,
+    "discount": 50,
+    "isSealed": true,
+    "console": "Playstation 1",
+    "images": [
+      {
+        "imageId": 1,
+        "src": "ps1_mgear.webp",
+        "alt": "Metal Gear main cover"
+      },
+      {
+        "imageId": 2,
+        "src": "ps1_mgear_front.webp",
+        "alt": "Metal Gear front cover"
+      },
+      {
+        "imageId": 3,
+        "src": "ps1_mgear_back.webp",
+        "alt": "Metal Gear back cover"
+      }
+    ],
+    "description": "Metal Gear Solid is an action-adventure stealth video game developed by Konami Computer Entertainment Japan and published by Konami. The game was first released in Japan on September 3, 1998, and later in North America on October 20, 1998, and in Europe on February 22, 1999. It is the first game in the Metal Gear Solid series and stars Solid Snake, a retired special forces operative, who is called back into action to stop FOXHOUND, a renegade special forces unit led by Liquid Snake, another clone of Big Boss. The game explores themes of genetic manipulation and the philosophy of genes as destiny."
+  },
+  {
+    "id": 12,
+    "title": "Spyro: Year of the Dragon",
+    "image": "ps1_spyro.webp",
+    "rating": 4,
+    "oldPrice": 199.99,
+    "currentPrice": 149.99,
+    "discount": 50,
+    "isSealed": true,
+    "console": "Playstation 1",
+    "images": [
+      {
+        "imageId": 1,
+        "src": "ps1_spyro.webp",
+        "alt": "Spyro main cover"
+      },
+      {
+        "imageId": 2,
+        "src": "ps1_spyro_front.webp",
+        "alt": "Spyro front cover"
+      },
+      {
+        "imageId": 3,
+        "src": "ps1_spyro_back.webp",
+        "alt": "Spyro back cover"
+      }
+    ],
+    "description": "Spyro: Year of the Dragon is a 2000 platform game developed by Insomniac Games and published by Sony Computer Entertainment for the PlayStation. It is the third installment in the Spyro series and follows the adventures of the titular purple dragon, Spyro, as he travels to the \"Forgotten Realms\" to retrieve stolen dragon eggs from an evil sorceress and her apprentice, Bianca."
+  }
+]

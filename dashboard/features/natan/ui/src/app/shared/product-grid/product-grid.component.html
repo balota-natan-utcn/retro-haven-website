@@ -1,0 +1,29 @@
+<div class="filter-controls">
+    <div class="console-filter">
+      <label for="consoleFilter">Filter by Console:</label>
+      <select id="consoleFilter" [(ngModel)]="selectedConsole.value" (change)="onConsoleChange($event)">
+        <option value="all">All Consoles</option>
+        @for (console of availableConsoles; track console)
+        {
+          <option [value]="console">{{ console }}</option>
+        }
+      </select>
+    </div>
+  </div>
+  
+  <div class="product-grid">
+    @if(filteredProducts$ | async; as products)
+    {
+      @if (products.length > 0)
+      {
+        @for (product of products; track product.id)
+        {
+          <app-product-card [product]="product" class="product-card-wrapper">
+          </app-product-card>
+        }
+      }@else
+      {
+        <div class="no-products">No products match the selected filters.</div>
+      }
+    }
+  </div>

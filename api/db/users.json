@@ -1,0 +1,157 @@
+[
+    {
+        "name": "Radu Dan",
+        "username": "Dan",
+        "attendance": [
+            "08.03.2025",
+            "15.03.2025",
+            "29.03.2025",
+            "12.04.2025"
+        ],
+        "checkoutTime": [
+            "15:42"
+        ],
+        "profileImage": "https://avatars.githubusercontent.com/u/8319412?v=4&amp;size=64"
+    },
+    {
+        "name": "Chis Gerstenmayer Luca",
+        "username": "Luca",
+        "attendance": [
+            "08.03.2025",
+            "15.03.2025",
+            "29.03.2025",
+            "12.04.2025"
+        ],
+        "checkoutTime": [
+            "15:43"
+        ],
+        "profileImage": "https://avatars.githubusercontent.com/u/49845429?s=400&u=f965f15cb892e88f41e651751013246896e9c006&v=4"
+    },
+    {
+        "name": "Balota Natan",
+        "username": "Natan",
+        "attendance": [
+            "08.03.2025",
+            "15.03.2025",
+            "29.03.2025",
+            "12.04.2025"
+        ],
+        "checkoutTime": [
+            "16:15"
+        ],
+        "profileImage": "https://avatars.githubusercontent.com/u/201347629?s=400&u=4413d128f07d71d38b5648454b3872e5ec2d1e7e&v=4"
+    },
+    {
+        "name": "Pop Vlad",
+        "username": "Vlad",
+        "attendance": [
+            "08.03.2025",
+            "15.03.2025",
+            "12.04.2025"
+        ],
+        "checkoutTime": [
+            "16:15"
+        ],
+        "profileImage": "https://avatars.githubusercontent.com/u/201348997?v=4  "
+    },
+    {
+        "name": "Sichet Patrick",
+        "username": "PSD",
+        "attendance": [
+            "08.03.2025",
+            "15.03.2025",
+            "29.03.2025",
+            "12.04.2025"
+        ],
+        "profileImage": "https://github.githubassets.com/images/gravatars/gravatar-user-420.png?size=40"
+    },
+    {
+        "name": "Estan Sebastian Andrei Ioan",
+        "username": "Sebastian",
+        "attendance": [
+            "08.03.2025",
+            "15.03.2025",
+            "12.04.2025"
+        ],
+        "profileImage": "https://avatars.githubusercontent.com/u/126972588?s=400&u=cb691c7b5efcf4ad9543af08497b16f6b38d6c09&v=4"
+    },
+    {
+        "name": "Susan Dominic",
+        "username": "Dominic",
+        "attendance": [
+            "08.03.2025",
+            "15.03.2025",
+            "29.03.2025",
+            "12.04.2025"
+        ],
+        "checkoutTime": [
+            "16:33"
+        ],
+        "profileImage": "https://github.githubassets.com/images/gravatars/gravatar-user-420.png?size=40"
+    },
+    {
+        "name": "Toma Ovidiu",
+        "username": "Ovidiu",
+        "attendance": [
+            "08.03.2025",
+            "15.03.2025",
+            "29.03.2025"
+        ],
+        "profileImage": "https://avatars.githubusercontent.com/u/144441284?v=4"
+    },
+    {
+        "name": "Barcas Patrik-Xavier",
+        "username": "Patrik",
+        "attendance": [
+            "08.03.2025",
+            "15.03.2025",
+            "29.03.2025",
+            "12.04.2025"
+        ],
+        "checkoutTime": [
+            "15:43"
+        ],
+        "profileImage": "https://avatars.githubusercontent.com/u/162785111?v=4;size=64"
+    },
+    {
+        "name": "Buier Sebastian David",
+        "username": "Sebi",
+        "attendance": [
+            "08.03.2025",
+            "15.03.2025",
+            "29.03.2025",
+            "12.04.2025"
+        ],
+        "checkoutTime": [
+            "16:17"
+        ],
+        "profileImage": "https://avatars.githubusercontent.com/u/162800431?s=400&u=507456d232d670f61fe7f45d9eedb46574768611&v=4"
+    },
+    {
+        "name": "Mangu Istvan",
+        "username": "Istvan",
+        "attendance": [
+            "08.03.2025",
+            "15.03.2025",
+            "29.03.2025",
+            "12.04.2025"
+        ],
+        "checkoutTime": [
+            "16:20"
+        ],
+        "profileImage": "https://avatars.githubusercontent.com/u/162785123?u=b437343f3c40d85d4bd46da17578b7178d672e16&amp;v=4&amp;size=64"
+    },
+    {
+        "name": "Mare Adrian",
+        "username": "Adrian",
+        "attendance": [
+            "15.03.2025",
+            "29.03.2025",
+            "12.04.2025"
+        ],
+        "checkoutTime": [
+            "16:13"
+        ],
+        "profileImage": "https://avatars.githubusercontent.com/u/173079715?u=5465ebb513c0aeea05e8807e67556f32e88a67ea&v=4&size=64"
+    }
+]

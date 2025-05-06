@@ -1,0 +1,78 @@
+:host {}
+
+// Styles moved from app.component.html
+.cart-icon-link {
+  position: relative;
+  display: inline-block;
+  margin-left: 1rem; /* Adjust spacing as needed */
+  color: inherit; /* Inherit color from header text */
+  text-decoration: none;
+
+  &:hover {
+    opacity: 0.8; /* Example hover effect */
+  }
+}
+
+.cart-count {
+  position: absolute;
+  top: -8px;
+  right: -10px;
+  background-color: red;
+  color: white;
+  height:12px;
+  width:12px;
+
+  border-radius: 12px;
+  padding: 2px;
+  font-size: 0.7rem;
+  font-weight: bold;
+  line-height: 1;
+  min-width: 12px; /* Ensure circle shape for single digit */
+  text-align: center;
+  box-shadow: 0 0 5px rgba(0,0,0,0.3); /* Optional shadow */
+}
+
+/* Example header structure styling (adjust as needed) */
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #dee2e6;
+  position: sticky; /* Make header sticky */
+  top: 0;
+  z-index: 1000; /* Ensure header stays on top */
+}
+
+.logo a {
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+  font-size: 1.5rem;
+}
+
+nav a {
+    margin: 0 0.75rem;
+    text-decoration: none;
+    color: #007bff;
+    padding: 0.5rem 0;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.2s ease-in-out;
+}
+nav a:hover,
+nav a.active { /* Add active class styling if using routerLinkActive */
+    color: #0056b3;
+    border-bottom-color: #0056b3;
+}
+
+
+.header-actions {
+  display: flex;
+  align-items: center;
+}
+
+main {
+  padding-top: 60px; /* Adjust based on actual header height to prevent overlap */
+  /* Add other main content styling */
+}

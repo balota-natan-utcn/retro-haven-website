@@ -1,0 +1,59 @@
+<div class="table-container">
+    <div class="notification-container" *ngIf="notification">
+      <div class="notification" [ngClass]="notification.type">
+        {{ notification.message }}
+      </div>
+    </div>
+  
+    <div class="table-header">
+      <h2>Products</h2>
+      <button class="btn btn-primary" (click)="addNewProduct()">
+        <span class="icon">+</span> Add New Product
+      </button>
+    </div>
+    
+    <table class="product-table">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Image</th>
+          <th>Title</th>
+          <th>Condition</th>
+          <th>Price</th>
+          <th>Old Price</th>
+          <th>Discount</th>
+          <th>Favorite</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let product of products" (click)="viewProductDetails(product.id!)">
+          <td>{{ product.id }}</td>
+          <td>
+            <img [src]="product.image" alt="{{ product.title }}" class="product-thumbnail">
+          </td>
+          <td>{{ product.title }}</td>
+          <td>
+            <div class="rating">
+              <span *ngFor="let star of generateStars(product.rating)" class="star" 
+                    [ngClass]="{ 'filled': star === 1 }">★</span>
+            </div>
+          </td>
+          <td>{{ product.currentPrice | currency }}</td>
+          <td>{{ product.oldPrice | currency }}</td>
+          <td>{{ product.discount }}%</td>
+          <td>
+            <span class="heart" [ngClass]="{ 'favorite': product.isSealed }">♥</span>
+          </td>
+          <td>
+            <button class="btn btn-danger" (click)="deleteProduct(product.id!, $event)">
+              Delete
+            </button>
+          </td>
+        </tr>
+        <tr *ngIf="products.length === 0">
+          <td colspan="9" class="no-data">No products available</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>

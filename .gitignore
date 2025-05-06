@@ -1,0 +1,8 @@
+.vs
+dashboard/local.json
+dashboard/local.json
+node_modules
+**/node_modules
+.idea
+**/.idea
+**/.vs

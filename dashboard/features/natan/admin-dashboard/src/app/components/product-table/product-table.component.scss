@@ -1,0 +1,127 @@
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+  }
+  
+  .table-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .notification-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+  }
+  
+  .notification {
+    padding: 12px 16px;
+    border-radius: 4px;
+    color: white;
+    
+    &.success {
+      background-color: #4caf50;
+    }
+    
+    &.error {
+      background-color: #f44336;
+    }
+  }
+  
+  .product-table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+    
+    th, td {
+      padding: 12px;
+      text-align: left;
+      border-bottom: 1px solid #e0e0e0;
+    }
+    
+    th {
+      background-color: #f5f5f5;
+      font-weight: 600;
+    }
+    
+    tbody tr {
+      cursor: pointer;
+      transition: background-color 0.2s;
+      
+      &:hover {
+        background-color: rgba(0, 0, 0, 0.04);
+      }
+    }
+    
+    .no-data {
+      text-align: center;
+      padding: 20px;
+      font-style: italic;
+      color: #757575;
+    }
+  }
+  
+  .product-thumbnail {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+  
+  .btn {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    
+    &.btn-primary {
+      background-color: #3f51b5;
+      color: white;
+      
+      &:hover {
+        background-color: #303f9f;
+      }
+    }
+    
+    &.btn-danger {
+      background-color: #f44336;
+      color: white;
+      
+      &:hover {
+        background-color: #d32f2f;
+      }
+    }
+    
+    .icon {
+      font-size: 1.2em;
+    }
+  }
+  
+  .rating {
+    display: flex;
+    
+    .star {
+      color: #d0d0d0;
+      font-size: 18px;
+      
+      &.filled {
+        color: gold;
+      }
+    }
+  }
+  
+  .heart {
+    font-size: 18px;
+    color: #d0d0d0;
+    
+    &.favorite {
+      color: #f44336;
+    }
+  }
